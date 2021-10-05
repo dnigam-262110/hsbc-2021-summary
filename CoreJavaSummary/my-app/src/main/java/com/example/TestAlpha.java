@@ -2,9 +2,15 @@ package com.example;
 
 public class TestAlpha {
 	public static void main(String[] args) {
-		test1();
-		TestAlpha obj1 = new TestAlpha();
-		obj1.test2();
+		checkAlphabet('*');
+		checkAlphabet('E');
+	}
+	public static void checkAlphabet(char c) {
+		if((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) {
+			System.out.println(c+" is an alphabet");
+		} else {
+			System.out.println(c+" is not an alphabet");
+		}
 	}
 	public static void test1() {
 		System.out.println("test1() method");
@@ -19,5 +25,6 @@ public class TestAlpha {
 	}
 	public static void test4() {
 		test1();
+		
 	}
 }
